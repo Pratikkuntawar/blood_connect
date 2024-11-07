@@ -1,0 +1,142 @@
+/* Container */
+.donor-registration-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  background: linear-gradient(135deg, #f093fb, #f5576c); /* Gradient background */
+  background: linear-gradient(135deg, #c4e0e5, #4ca1af); /* Gradient background */
+  border-radius: 20px;
+  width: 600px; /* Wider form */
+  margin: 30px auto;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15); /* Softer shadow */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading */
+h2 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Slight shadow */
+}
+
+/* Form */
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Labels */
+label {
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 8px;
+  font-size: 14px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Input and Select Fields */
+input, select {
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+input:focus, select:focus {
+  outline: none;
+  box-shadow: 0px 4px 12px rgba(240, 147, 251, 0.4); /* Enhanced shadow on focus */
+  background-color: #ffe0f0; /* Subtle background color change on focus */
+}
+
+/* Button */
+button {
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(135deg, #ff6a88, #ff99ac);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 5px 15px rgba(255, 107, 107, 0.4);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #ff99ac, #ff6a88);
+  transform: translateY(-3px);
+  box-shadow: 0px 7px 20px rgba(255, 107, 107, 0.6);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+/* Message */
+.message {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  width: 90%;
+}
+@media (max-width: 768px) {
+  .donor-registration-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .registration-form {
+    flex-direction: column;
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  input,
+  select {
+    font-size: 16px;
+  }
+
+  button {
+    font-size: 18px;
+    padding: 14px;
+  }
+}
+
+/* Responsive styling for very small screens (e.g., mobile devices) */
+@media (max-width: 480px) {
+  .donor-registration-container {
+    padding: 10px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  input,
+  select {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+
+

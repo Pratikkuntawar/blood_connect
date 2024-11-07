@@ -1,0 +1,27 @@
+.login-container {
+    height: 100vh;
+    background-color: #f8f9fa;
+    background: linear-gradient(135deg, #c4e0e5, #4ca1af); /* Gradient background */
+  }
+  
+  .form-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .styled-input {
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 8px;
+  }
+  
+  .form-label {
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    background: white;
+    padding: 0 5px;
+    color: #6c757d;
+  }
+  

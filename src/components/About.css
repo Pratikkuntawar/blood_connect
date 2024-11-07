@@ -1,0 +1,238 @@
+/* Original CSS*/
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-container {
+  padding: 20px;
+}
+
+.heading{
+  margin-bottom: 40px;
+  font-size: 2em;
+  color: #2c3e50;
+}
+
+.definition {
+  line-height: 1.6;
+  color: #34495e;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: justify; /* Added justified text alignment */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-fluid {
+  width: 400px;  /* Set the width */
+  height: 400px; /* Set the height */
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 10px; /* Add rounded corners */
+}
+
+#h2{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* Vision and Mission Heading */
+/* Vision and Mission Section */
+.card {
+  background: #ffffff; /* White background for a clean look */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+}
+
+.card:hover {
+  transform: scale(1.03); /* Slight scale-up effect on hover */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #2c3e50;
+  text-align: center;
+  border-bottom: 2px solid #e74c3c; /* Red underline */
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.card-text {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* Decorative Elements */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #e74c3c, #3498db); /* Gradient bar at top */
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card-body h2 {
+  font-size: 1.6rem;
+  color: #34495e;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card-body p {
+  color: #606c76;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 1.5rem;
+  }
+  .card-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 486px) {
+  .card-title {
+    font-size: 1.3rem;
+  }
+  .card-text {
+    font-size: 0.95rem;
+  }
+}
+
+
+/* Card Titles */
+.card-title {
+  font-size: 1.6em;
+  color: #34495e;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Card Text */
+.card-text {
+  line-height: 1.6;
+  color: #6c757d;
+  font-size: 1.05em;
+  text-align: justify;
+}
+
+/* Benefits Cards */
+.d {
+  border-radius: 15px;
+  background: linear-gradient(135deg, #eef2f3, #d6e4f0); /* Soft gradient background */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+}
+
+.d:hover {
+  transform: scale(1.05); /* Slightly larger on hover */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Benefit Titles */
+.t1 {
+  font-size: 1.4em;
+  color: #ff6b6b;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Benefit Text */
+.t2 {
+  line-height: 1.6;
+  color: #4a4a68;
+  font-size: 1.05em;
+  text-align: justify;
+}
+
+/* Symptoms Heading */
+.symptoms {
+  font-size: 1.8em;
+  color: #2b2b52;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .img-fluid {
+    max-width: 300px;
+  }
+
+  .heading,
+  #h2,
+  .symptoms {
+    font-size: 1.7em;
+  }
+
+  .t1 {
+    font-size: 1.3em;
+  }
+
+  .definition,
+  .card-text,
+  .t2 {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 486px) {
+  .container {
+    padding: 15px;
+  }
+
+  .heading,
+  #h2,
+  .symptoms {
+    font-size: 1.5em;
+  }
+
+  .t1 {
+    font-size: 1.2em;
+  }
+
+  .definition,
+  .card-text,
+  .t2 {
+    font-size: 0.95em;
+  }
+}

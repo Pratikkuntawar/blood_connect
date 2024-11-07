@@ -1,0 +1,150 @@
+/* Main container for the search section */
+.search{
+  min-height: 100vh;
+  background: linear-gradient(135deg, #c4e0e5, #4ca1af); /* Gradient background */
+}
+
+  .search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    margin: auto; /* Added margin-top */
+}
+  /* Heading styling */
+  .search-container h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 25px;
+  }
+  
+  /* Form styling */
+  .search-form {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  /* Input fields styling */
+  .form-input {
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-input:focus {
+    border-color: #0069d9;
+    outline: none;
+  }
+  
+  /* Button styling */
+  .search-button {
+    padding: 12px 24px;
+    background-color: #0069d9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .search-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+  
+  /* Donor results section */
+  .donor-results {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  /* Styling for the donor table */
+  .donor-table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 10px solid black;
+    overflow: hidden;
+    margin-top: 40px;
+  }
+  
+  /* Table header styling */
+  .table-header {
+    background-color: #4CAF50; /* Darker blue for the header */
+    color: #ffffff;
+    font-weight: bold;
+    padding: 15px;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  /* Table row styling */
+  .table-row:nth-child(even) {
+    background-color: #88ef7a; /* Light gray for even rows */
+  }
+  
+  .table-row:nth-child(odd) {
+    background-color: #88ef7a; /* White for odd rows */
+  }
+  
+  /* Hover effect on rows */
+  .table-row:hover {
+    background-color: #e8fafe; /* Light blue for hover effect */
+  }
+  
+  /* Data cell styling */
+  .table-data {
+    padding: 15px;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .search-container {
+      max-width: 100%;
+    }
+  
+    .search-form {
+      flex-direction: column;
+    }
+  
+    .donor-table {
+      width: 100%;
+    }
+  }
+  @media (max-width: 768px) {
+    .donor-results {
+      width: 100%;
+      overflow-x: auto;
+    }
+    
+    .donor-table {
+      width: 100%;
+      min-width: 600px; /* Set a minimum width to enable horizontal scrolling */
+    }
+  
+    .table-data,
+    .table-header {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }

@@ -1,0 +1,50 @@
+/* Custom CSS for Navbar */
+.navbar {
+  background-color: #b71c1c; /* Dark red for blood donation theme */
+  transition: background-color 0.3s ease;
+}
+
+.navbar:hover {
+  background-color: #d32f2f; /* Slightly lighter red on hover */
+}
+
+.navbar-brand .brand-name {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #fff;
+}
+
+.logo-container {
+  background-color: rgba(183, 28, 28, 0.8); /* Matching red with slight transparency */
+  border-radius: 8px; /* Rounded corners */
+  padding: 5px; /* Add padding around the logo */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.logo-hover {
+  transition: transform 0.3s ease;
+}
+
+.navbar-nav .nav-link {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffe0e0; /* Light color on hover */
+}
+
+.navbar-nav .active {
+  border-bottom: 2px solid #ddf319; /* White underline for active links */
+}
+
+  
+  

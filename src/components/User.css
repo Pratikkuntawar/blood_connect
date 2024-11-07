@@ -1,0 +1,103 @@
+/* Container */
+.register-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #c4e0e5, #4ca1af); /* Gradient background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Form Container */
+  .register-container .row {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+  }
+  
+  /* Form Section */
+  .form-section {
+    padding: 2.5rem;
+    background: #f8f9fa;
+  }
+  
+  .form-section h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Input Styling */
+  .styled-input {
+    border: none;
+    border-bottom: 2px solid #4ca1af;
+    border-radius: 0;
+    font-size: 1rem;
+    padding: 0.75rem 0.5rem;
+    transition: all 0.3s ease;
+    box-shadow: none;
+  }
+  
+  .styled-input:focus {
+    border-bottom-color: #007bff;
+    outline: none;
+    box-shadow: 0px 8px 15px rgba(0, 123, 255, 0.1);
+  }
+  
+  .form-label {
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    font-size: 0.9rem;
+    color: #4ca1af;
+    background-color: #f8f9fa;
+    padding: 0 5px;
+    transition: 0.3s ease;
+  }
+  
+  .styled-input:placeholder-shown + .form-label {
+    top: 0.5rem;
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  /* Button */
+  .submit-btn {
+    background: #4ca1af;
+    border: none;
+    padding: 0.75rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    transition: all 0.3s ease;
+    border-radius: 30px;
+    box-shadow: 0px 5px 15px rgba(76, 161, 175, 0.4);
+  }
+  
+  .submit-btn:hover {
+    background: #007bff;
+    box-shadow: 0px 8px 20px rgba(0, 123, 255, 0.4);
+    transform: translateY(-3px);
+  }
+  
+  /* Image Section */
+  .col-md-6 img {
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .col-md-6 img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Alert Message */
+  .alert-info {
+    background-color: #e0f7fa;
+    color: #00796b;
+    border: 1px solid #00796b;
+    font-weight: 500;
+  }
+  
