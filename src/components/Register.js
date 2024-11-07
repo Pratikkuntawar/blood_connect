@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Register.css';
-
+import { useNavigate } from 'react-router-dom';
 const Register = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -12,7 +12,7 @@ const Register = () => {
     city: '',
     status: 'Available'
   });
-
+  const navigate = useNavigate();
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -155,6 +155,12 @@ const Register = () => {
 
         <button type="submit">Register Donor</button>
       </form>
+                  <button 
+            className="btn btn-secondary custom-button w-100 mt-3 fw-bold" 
+            onClick={() => navigate('/update-donor')}
+          >
+            Update Profile
+          </button>
     </div>
     </div>
   );
