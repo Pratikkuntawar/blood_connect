@@ -45,6 +45,152 @@
 .navbar-nav .active {
   border-bottom: 2px solid #ddf319; /* White underline for active links */
 }
+@media (max-width: 768px) {
+  /* Stack the navbar items vertically */
+  .navbar-nav {
+    flex-direction: column; /* Change direction to column */
+    align-items: center; /* Center the items */
+  }
 
+  .nav-item {
+    margin: 10px 0; /* Add spacing between items */
+  }
+
+  /* Adjust brand name size on small screens */
+  .brand-name {
+    font-size: 1.5rem; /* Smaller font size */
+    
+  }
+
+  /* Toggler button styles */
+  .navbar-toggler {
+    border-color: #ffcc00; /* Change the border color */
+  }
+
+  .navbar-toggler-icon {
+    background-color: #ffcc00; /* Change the icon color */
+    background-color: black;
+  }
+  .brand-name {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    width: 60%; /* Adjust this percentage as needed */
+    max-width: 300px; /* Optional: Set a max width */
+    margin: 0 auto; /* Center the brand name */
+    margin-left: 0px;
+  }
+  img{
+    width: 70px;
+    height: 50px;
+  }
+}
+
+
+
+/* Custom CSS for Navbar */
+.navbar {
+  background-color: #b71c1c; /* Dark red for blood donation theme */
+  transition: background-color 0.3s ease;
+}
+
+.navbar:hover {
+  background-color: #d32f2f; /* Slightly lighter red on hover */
+}
+
+.navbar-brand .brand-name {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #fff;
+}
+
+.logo-container {
+  background-color: rgba(183, 28, 28, 0.8); /* Matching red with slight transparency */
+  border-radius: 8px; /* Rounded corners */
+  padding: 5px; /* Add padding around the logo */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.logo-hover {
+  transition: transform 0.3s ease;
+}
+
+.navbar-nav .nav-link {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffe0e0; /* Light color on hover */
+}
+
+.navbar-nav .active {
+  border-bottom: 2px solid #ddf319; /* White underline for active links */
+}
+
+/* Ensure navbar-toggler does not take full width on small screens */
+.navbar-toggler {
+  width: auto; /* Only take the necessary width */
+  padding: 5px 10px;
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Optional: add some rounding to match style */
+  background-color: #ffcc00; /* Custom color */
+  margin-left: auto; /* Align to the right side */
+}
+
+.navbar-toggler-icon {
+  color: white;
+  background-color: black; /* Icon color */
+}
+
+/* Small screen adjustments */
+@media (max-width: 768px) {
+  /* Stack navbar items vertically when collapsed */
+  .navbar-collapse {
+    text-align: center; /* Center-align items */
+  }
+
+  .navbar-nav {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    width: 100%; /* Make navbar items take up the full width */
+  }
+
+  .nav-item {
+    margin: 10px 0; /* Add spacing between items */
+    width: 100%; /* Make each item take up full width */
+  }
+
+  .navbar-nav .nav-link {
+    justify-content: center; /* Center text in each item */
+    padding: 10px 0; /* Add padding for easier tapping */
+    width: 100%; /* Full width for each link */
+    font-size: 1.1rem;
+  }
+
+  .collapse.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .brand-name {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .logo-container img {
+    width: 50px; /* Smaller logo for small screens */
+    height: auto;
+  }
+}
+
+  
   
   
