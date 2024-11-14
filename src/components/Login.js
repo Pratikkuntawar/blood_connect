@@ -82,7 +82,6 @@ function Login() {
                 placeholder="Enter your email"
                 required
               />
-              // <label className="form-label">Email</label>
             </div>
 
             <div className="mb-4 position-relative">
@@ -96,7 +95,6 @@ function Login() {
                 placeholder="Enter your password"
                 required
               />
-              // <label className="form-label">Password</label>
             </div>
 
             <button type="submit" className="btn btn-primary w-100 fw-bold">
