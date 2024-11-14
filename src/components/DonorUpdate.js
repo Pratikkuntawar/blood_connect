@@ -42,12 +42,12 @@ const DonorUpdate = () => {
 
       const data = await response.json();
       if (response.ok) {
-        setMessage(data.message);
+        window.alert(data.message);
       } else {
-        setMessage(data.error);
+        window.alert(data.error);
       }
     } catch (error) {
-      setMessage('Error updating profile.');
+      window.alert('Error updating profile.');
     }
   };
 
