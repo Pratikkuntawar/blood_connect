@@ -100,4 +100,26 @@
     border: 1px solid #00796b;
     font-weight: 500;
   }
+ @media (max-width: 768px) {
+    /* Stack navbar items vertically when collapsed */
+    .form-section{
+      width: 100%;
+    }
+  }
+  @media (max-width: 768px) {
+    /* Make the form container take full width on small screens */
+    .register-container .row {
+      width: 85% !important;
+      margin: 0;
+    }
   
+    /* Ensure the form section takes the entire width */
+    .form-section {
+      padding: 2rem 1rem;
+    }
+  
+    /* Hide the image section on smaller screens */
+    .col-md-6.d-none.d-md-block {
+      display: none !important;
+    }
+  } 
